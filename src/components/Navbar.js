@@ -6,7 +6,7 @@ const NavigationBar = ({ isAuthenticated, userRole, onLogout }) => {
   console.log('Navbar props:', { isAuthenticated, userRole });
   return (
     <Navbar style={{ 
-      backgroundColor: '#2a3f54',
+      backgroundColor: '#2ed133',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
       borderBottom: '1px solid #40566b'
     }} variant="dark" expand="lg">
@@ -20,7 +20,7 @@ const NavigationBar = ({ isAuthenticated, userRole, onLogout }) => {
             letterSpacing: '0.5px'
           }}
         >
-          Ahmer Tariq
+          Babar Iqbal
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

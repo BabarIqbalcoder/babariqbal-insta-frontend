@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(24, 43, 195);
   position: relative;
   overflow-x: hidden; /* Keep horizontal scroll blocked */
   overflow-y: auto; 
@@ -42,10 +42,18 @@ input::file-selector-button {
 .video-card {
   max-width: 400px;
   margin: 0 auto;
-  border-radius: 0; /* Rectangular card */
-  border: 2px solid #333;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
+  border-radius: 20px; /* Softer, more rounded corners */
+  border: 2px solid #555; /* Softer border color */
+  background: rgba(30, 30, 60, 0.9); /* Dark, cool background */
+  color: #f0f0f0; /* Softer, off-white text */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.video-card:hover {
+  border-radius: 30px; /* Round the corners even more on hover */
+  background: rgba(50, 50, 100, 0.9); /* Slight color shift */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
 }
 /* Container for media content (video or image) */
 .media-container {
@@ -70,17 +78,38 @@ input::file-selector-button {
 
 .comments-section {
   margin-bottom: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  border-radius: 0; /* Rectangular */
+  background: rgba(41, 41, 213, 0.9); /* Cool, dark background */
+  padding: 1.5rem;
+  border-radius: 15px; /* Soft corners */
+  border: 2px solid #444; /* Subtle border */
+  color: #de1414; /* Light text for better contrast */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Subtle shadow for depth */
+  transition: all 0.3s ease;
+}
+
+.comments-section:hover {
+  background: rgba(70, 70, 120, 0.9); /* Slight color shift on hover */
+  border-radius: 20px; /* Round the corners more on hover */
+  border-color: #666;
 }
 
 .rating-section {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  border-radius: 0; /* Rectangular */
+  background: rgba(60, 60, 100, 0.9); /* Slightly different tone for distinction */
+  padding: 1.5rem;
+  border-radius: 15px; /* Soft corners */
+  border: 2px solid #555; /* Subtle border */
+  color: #ef0b0b;
   text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
 }
+
+.rating-section:hover {
+  background: rgba(80, 80, 130, 0.9); /* Slight color shift on hover */
+  border-radius: 20px;
+  border-color: #777;
+}
+
 
 .form-control {
   border-radius: 0 !important;
